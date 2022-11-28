@@ -3,10 +3,10 @@
 
 # Phishing Attack
 
-- Nir Meir 313229106, 
+- Nir Meir 313229106 
 - Dana Zorohov 207817529
 
-# Import
+# Imports
 
 * import smtplib, ssl
 * import sys
