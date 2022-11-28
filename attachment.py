@@ -1,13 +1,8 @@
-import os
 import pwd
-import socket
-import getpass as gt
 import spwd
-import platform
 import locale
 from scapy.all import *
 import socket
-
 from scapy.layers.dns import DNS, DNSQR
 from scapy.layers.inet import IP, UDP
 

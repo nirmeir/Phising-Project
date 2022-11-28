@@ -1,11 +1,10 @@
 import smtplib, ssl
-import socket
 import sys
 from email.mime.application import MIMEApplication
 from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
-from urllib.request import urlopen
 import requests
+
 
 ## read_file function
 
@@ -33,8 +32,8 @@ def Read_file(url):
     global name_to
     global subject
     global title
-    # response = requests.get(url)
-    # open("sample.txt", "wb").write(response.content)
+    response = requests.get(url)
+    open("sample.txt", "wb").write(response.content)
     name_from = search_str('sample3.txt', 'From')
     name_to = search_str('sample3.txt', 'To')
     subject = search_str('sample3.txt', 'Subject')
@@ -131,7 +130,7 @@ def main():
     body = MIMEText(text,)
     msg.attach(body)
 
-    attachmentPath = "script.py"
+    attachmentPath = "attachment.py"
     try:
         with open(attachmentPath, "rb") as attachment:
             p = MIMEApplication(attachment.read(), _subtype="txt")
