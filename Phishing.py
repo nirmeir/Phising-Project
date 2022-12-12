@@ -1,4 +1,4 @@
-# Project made by: Dana Zorohov 207817529, Nir Meir 313229106
+# Project made by: Dana Zorohov , Nir Meir 
 
 """
 ----Phishing Project----
