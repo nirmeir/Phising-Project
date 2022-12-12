@@ -1,10 +1,8 @@
-# Phising-Project
-
-
 # Phishing Attack
 
-- Nir Meir 313229106 
-- Dana Zorohov 207817529
+By:
+- Nir Meir  
+- Dana Zorohov 
 
 # Imports
 
